@@ -164,6 +164,11 @@ class CustomFabState extends State<CustomFab>
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(100),
                 ),
+                /*
+                *  Box shadow equals material elevation 4
+                *  https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/shadows.dart
+                */
+                boxShadow: kElevationToShadow[4],
                 child: Text(
                   label,
                 ),
